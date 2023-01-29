@@ -93,6 +93,7 @@ import Foundation
                 errorMessage = response!
                 return
             }
+            updateComplete = true
         }
     }
     
