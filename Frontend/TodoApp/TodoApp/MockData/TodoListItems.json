@@ -1,0 +1,37 @@
+{
+    "todo_items": [
+        {
+            "id": 1,
+            "title": "Learn PostgreSQL",
+            "creator_id": 1,
+            "description": null,
+            "created_at": "2023-01-11T00:49:52.921Z",
+            "due_at": null,
+            "completed": false,
+            "list_id": 1,
+            "priority": 0
+        },
+        {
+            "id": 2,
+            "title": "Learn Node.js",
+            "creator_id": 1,
+            "description": null,
+            "created_at": "2023-01-11T00:49:52.921Z",
+            "due_at": null,
+            "completed": false,
+            "list_id": 1,
+            "priority": 0
+        },
+        {
+            "id": 3,
+            "title": "Create a web server",
+            "creator_id": 1,
+            "description": null,
+            "created_at": "2023-01-11T00:49:52.921Z",
+            "due_at": null,
+            "completed": false,
+            "list_id": 1,
+            "priority": 0
+        }
+    ]
+}

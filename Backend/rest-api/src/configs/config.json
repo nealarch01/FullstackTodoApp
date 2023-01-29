@@ -1,0 +1,12 @@
+{
+	"port": 6001,
+	"database": {
+		"host": "localhost",
+		"username": "nealarchival",
+		"password": "",
+		"database": "todo_db",
+		"port": 6002,
+		"max": 10
+	},
+	"signingKey": "verysecretsigningkeydonotshowtoanyone"
+}
