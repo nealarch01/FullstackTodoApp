@@ -20,9 +20,9 @@ Note: this project is about 92% complete. Some polishing touches will be added
 <summary>Video</summary>
 <br>
 
-</details>
+https://user-images.githubusercontent.com/73256760/215308660-74328931-ede7-4704-8fcf-94bc3842a8fe.mov
 
-<details>
+</details>
 
 
 
