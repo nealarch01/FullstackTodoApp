@@ -1,7 +1,6 @@
 # Full Stack iOS Todo App
 A full stack todo application created with Swift and TypeScript
 
-Note: this project is about 92% complete. Some polishing touches will be added
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" align="right" height="90"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" align="right" height="90" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" align="right" height="90" />
