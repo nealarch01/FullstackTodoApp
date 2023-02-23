@@ -12,9 +12,16 @@ func saveJWT(token: String) {
     let keychainQuery: [String: Any] = [
         kSecClass as String: kSecClassGenericPassword,
         kSecAttrAccount as String: "jwt",
-        kSecValueData as String: token.data(using: .utf8)!,
     ]
-    SecItemAdd(keychainQuery as CFDictionary, nil)
+    // First time initialization
+    if getJWT() == nil {
+        SecItemAdd(keychainQuery as CFDictionary, nil)
+    }
+    // If a previous token has already been stored
+    let attributesToUpdate: [String: Any] = [
+        kSecValueData as String: token.data(using: .utf8)!
+    ]
+    SecItemUpdate(keychainQuery as CFDictionary, attributesToUpdate as CFDictionary)
 }
 
 func getJWT() -> String? {
