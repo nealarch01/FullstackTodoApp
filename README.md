@@ -3,14 +3,13 @@ A full stack todo application created with Swift and TypeScript
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" align="right" height="90"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" align="right" height="90" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" align="right" height="90" />
           
 ## Table of Contents
 - [Videos and Screenshots](#video-and-screenshots)
 - [Tech Stack](#backend-rest-api)
-  - Frontend
-  - Backend
-  - Database
+  - [Frontend](#frontend-ios-app)
+  - [Backend](#backend-rest-api)
+  - [Database](#database)
 
 
 
@@ -18,8 +17,54 @@ A full stack todo application created with Swift and TypeScript
 <details>
 <summary>Video</summary>
 <br>
-
+Note: edit screen nav bar is incorrect, was fixed in a commit
 https://user-images.githubusercontent.com/73256760/215308660-74328931-ede7-4704-8fcf-94bc3842a8fe.mov
+
+</details>
+<details>
+<summary>Home</summary>
+<br>
+
+
+
+</details>
+
+</details>
+<details>
+<summary>Home</summary>
+<br>
+
+
+
+</details>
+
+</details>
+<details>
+<summary>Edit Todo</summary>
+<br>
+
+
+
+</details>
+<details>
+<summary>Create Todo</summary>
+<br>
+
+
+
+</details>
+<details>
+<summary>Edit Todo List</summary>
+<br>
+
+
+
+</details>
+<details>
+<summary>Edit Todo List</summary>
+<br>
+
+
 
 </details>
 
@@ -39,6 +84,7 @@ https://user-images.githubusercontent.com/73256760/215308660-74328931-ede7-4704-
 - Model-View-Controller (MVC)
 
 ### Database:
-- PostgreSQL
+- PostgreSQL 15.0
+
 
 
