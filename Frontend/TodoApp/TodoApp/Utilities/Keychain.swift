@@ -9,15 +9,20 @@ import Foundation
 import Security
 
 func saveJWT(token: String) {
-    let keychainQuery: [String: Any] = [
-        kSecClass as String: kSecClassGenericPassword,
-        kSecAttrAccount as String: "jwt",
-    ]
-    // First time initialization
-    if getJWT() == nil {
-        SecItemAdd(keychainQuery as CFDictionary, nil)
+    if getJWT() == nil { // If not previously
+        let firstTimeQuery: [String:Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: "jwt",
+            kSecValueData as String: token.data(using: .utf8)!
+        ]
+        SecItemAdd(firstTimeQuery as CFDictionary, nil)
     }
     // If a previous token has already been stored
+    let keychainQuery: [String: Any] = [
+        kSecClass as String: kSecClassGenericPassword,
+        kSecAttrAccount as String: "jwt"
+    ]
+    // First time initialization
     let attributesToUpdate: [String: Any] = [
         kSecValueData as String: token.data(using: .utf8)!
     ]
