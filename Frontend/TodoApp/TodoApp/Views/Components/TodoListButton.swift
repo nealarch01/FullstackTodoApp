@@ -49,7 +49,7 @@ struct TodoListButton: View {
     @ViewBuilder
     private func longPressMenu() -> some View {
         editView
-        Button(action: {
+        Button(role: .destructive, action: {
             deleteAlertShown.toggle()
         }) {
             Label("Delete", systemImage: "minus.circle")

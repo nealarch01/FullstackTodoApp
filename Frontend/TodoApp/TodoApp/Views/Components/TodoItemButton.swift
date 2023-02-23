@@ -79,14 +79,15 @@ struct TodoItemButton: View {
     private func longPressMenu() -> some View {
         Group {
             editView
-            Button(action: {
+            Button(role: .destructive, action: {
                 confirmDeleteAlertShown.toggle()
             }) {
                 Label {
                     Text("Delete")
                 } icon: {
                     Image(systemName: "minus.circle")
-                }
+                } // Label
+                .background(Color.red)
             } // Button
         } // Group
     }
