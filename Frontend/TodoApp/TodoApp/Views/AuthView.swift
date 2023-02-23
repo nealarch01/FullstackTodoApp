@@ -91,7 +91,6 @@ struct LoginView: View {
             if token == "" {
                 return
             }
-            saveJWT(token: token)
             session.setToken(token)
         }
         
@@ -192,7 +191,6 @@ struct RegisterView: View {
             if token == "" {
                 return
             }
-            saveJWT(token: token)
             session.setToken(token)
         }
     }

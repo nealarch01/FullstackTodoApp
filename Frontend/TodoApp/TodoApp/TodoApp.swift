@@ -31,8 +31,11 @@ struct TodoApp: App {
     
     private func checkSavedLogin() {
         print("Checking if credentials exist")
+        defer {
+            isLoading = false
+        }
         isLoading = true
-        guard let token = getJWT() else {
+        guard let token = session.lastSavedToken() else {
             return
         }
         if token == "" {
@@ -45,11 +48,9 @@ struct TodoApp: App {
             if verificationError != nil {
                 print(verificationError!)
                 session.unsetToken() // Sets to an empty string
-                isLoading = false
                 return
             }
-            isLoading = false
             session.setToken(token)
-        }
+        } // End of Task Block
     }
 }

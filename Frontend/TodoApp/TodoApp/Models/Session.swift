@@ -20,12 +20,16 @@ class Session: ObservableObject {
     
     public func setToken(_ token: String) {
         self.token = token
-        saveJWT(token: token)
+        saveJWT(token: self.token)
     }
     
     public func unsetToken() {
         // Also unset the token saved in keychain
-        saveJWT(token: "")
         self.token = ""
+        saveJWT(token: self.token)
+    }
+    
+    public func lastSavedToken() -> String? {
+        return getJWT()
     }
 }
