@@ -119,7 +119,7 @@ struct EditTodoView: View {
                 .cornerRadius(12)
         } // VStack
         .navigationBarBackButtonHidden(true)
-        .navigationTitle("Create Todo")
+        .navigationTitle("Edit Todo")
     }
     
     // MARK: prioritySelectionMenu
