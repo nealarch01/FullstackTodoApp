@@ -42,8 +42,11 @@ struct CreateListView: View {
                 dismiss()
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Create Todo List")
+        .navigationBarBackButtonHidden(true)
         
-    }
+    } // body
     
     // MARK: topLabel
     @ViewBuilder
