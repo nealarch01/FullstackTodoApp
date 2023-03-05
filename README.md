@@ -17,7 +17,11 @@ A full stack todo application created with Swift and TypeScript
 <details>
 <summary>Video</summary>
 <br>
+
 Note: edit screen nav bar is incorrect, was fixed in a commit
+
+
+
 https://user-images.githubusercontent.com/73256760/215308660-74328931-ede7-4704-8fcf-94bc3842a8fe.mov
 
 </details>
